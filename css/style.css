@@ -171,6 +171,18 @@ img {
   height: auto;
 }
 
+@media screen and (max-width: 320px) {
+  img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  img {
+    width: 100%;
+  }
+}
+
 a {
   text-decoration: none;
   color: var(--logo-color);
@@ -315,6 +327,12 @@ h3 {
   margin-left: auto;
 }
 
+@media screen and (max-width: 767px) {
+  .site-nav__contact {
+    display: none;
+  }
+}
+
 .site-nav__item:not(:last-child) {
   margin-right: 50px;
   position: relative;
@@ -328,6 +346,19 @@ h3 {
 .site-nav__contact:not(:last-child) {
   margin-right: 50px;
   margin-left: auto;
+}
+
+@media screen and (min-width: 767.89px) {
+  .site-nav__contact:not(:last-child) {
+    margin-bottom: 10px;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-nav__contact:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .site-nav__link,
@@ -344,6 +375,10 @@ h3 {
   align-items: center;
   color: var(--text-color);
   transition: color 250ms var(--time-transition);
+  /*@media screen and(min-width: 768px) {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }*/
 }
 
 .site-nav__link:hover, .site-nav__link:focus,
@@ -369,6 +404,14 @@ h3 {
 .contact-header__link:hover,
 .contact-header__link:focus {
   color: var(--logo-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .site-nav__link,
+  .contact-header__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .site-nav__link:hover,
@@ -398,6 +441,28 @@ h3 {
   justify-self: flex-end;
   margin-left: auto;
   float: right;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-header {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-header {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+@media screen and (max-width: 767.89px) {
+  .contact-header__link {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+  }
 }
 
 .contact-header__link:hover .envelope,
@@ -593,6 +658,26 @@ address {
   flex-direction: row;
   align-items: baseline;
   justify-content: space-between;
+}
+
+@media screen and (min-width: 320px) {
+  .footer {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .card-footer {
