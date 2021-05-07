@@ -2,15 +2,10 @@
 .visualization-section {
     padding-bottom: 94px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (max-width: 1199.98px) {
        display: none;
     }
-
-    @media screen and (min-width: 480px) {
-        display: none;
-    }
 }
-
 .main-title {
     margin-bottom: 50px;
     font-weight: bold;

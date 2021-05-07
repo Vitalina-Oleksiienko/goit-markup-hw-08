@@ -129,6 +129,26 @@ textarea.modal-input {
     line-height: 24px;
     letter-spacing: 0.03em;
     color: var(--text-color);
+
+    @media screen and(min-width: 320px) {
+        flex-wrap: wrap;
+        font-size: 10px;
+    }
+
+    @media screen and(min-width: 420px) {
+        margin-left: 0;
+        font-size: 12px;
+        line-height: 1.16;
+    }
+
+    @media screen and(min-width:1200px) {
+        display: flex;
+        align-items: center;
+        margin-left: 8px;
+        align-content: center;
+        font-size: 14px;
+        line-height: 1.71px;
+    }
 }
 
 .modal-checkbox-link {
@@ -139,6 +159,18 @@ textarea.modal-input {
     line-height: 24px;
     letter-spacing: 0.03em;
     text-decoration-line: underline;
+
+    @media screen and(min-width: 320px) {
+        margin-top: 15px;
+    }
+
+    @media screen and(min-width: 420px) {
+        margin-top: 0;
+    }
+
+    @media screen and(min-width:1200px) {
+        margin-left: 3px;
+    }
 }
 
 .modal-icon-checkbox {

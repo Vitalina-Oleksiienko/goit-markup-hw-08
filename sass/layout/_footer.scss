@@ -20,6 +20,8 @@ address {
          display: block;
          align-items: baseline;
          text-align: center;
+         justify-content: center;
+         
      }
 
      @media screen and(min-width:768px) {
@@ -33,15 +35,15 @@ address {
      }
 }
 @media screen and(min-width: 320px) {
-    .footer-contact{
+    address {
     text-align: center;
     }
 }
 
 @media screen and(min-width:1200px) {
     .footer-contact {
-    text-align: left;
-    ]
+    text-align: left;}
+    }
 
 .card-footer {
     flex-basis: calc((50% - 45px) / 2);
@@ -55,6 +57,27 @@ address {
     height: 80px;
     display: inline-flex;
     flex-basis: calc((50% - 45px) / 2);
+
+     @media screen and(min-width: 320px),
+     (min-width: 480px) {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         margin-bottom: 60px;
+         margin-right: 0;
+     }
+
+     @media screen and(min-width:768px) {
+         display: inline-flex;
+         justify-content: center;
+         margin-bottom: 0;
+         margin-right: auto;
+     }
+
+     @media screen and(min-width:1200px) {
+         display: block;
+         margin-right: 100px;
+     }
 }
 
 .footer-list {
