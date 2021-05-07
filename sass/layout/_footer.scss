@@ -1,0 +1,74 @@
+/*подвал*/
+footer {
+    padding: 60px 0 60px 0;
+    margin-top: 0;
+    background: var(--title-color, #2f303a);
+    height: 252px;
+}
+
+address {
+    font-style: normal;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.card-footer {
+    flex-basis: calc((50% - 45px) / 2);
+    display: block;
+}
+
+.sosial {
+    width: 206px;
+    height: 80px;
+    display: inline-flex;
+    flex-basis: calc((50% - 45px) / 2);
+}
+
+.footer-list {
+    text-transform: uppercase;
+    color: var(--list-color);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+}
+
+.social-footer__icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--list-color);
+}
+
+.social-footer {
+    display: inline-flex;
+    padding-left: 0;
+    width: 206px;
+    height: 44px;
+}
+
+.social-footer__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms var(--time-transition),
+        fill 250ms var(--time-transition);
+}
+
+.social-footer__item+.social-footer__item {
+    margin-left: 10px;
+}
+
+.social-footer__link:hover,
+.social-footer__link:focus {
+    background-color: var(--logo-color);
+}

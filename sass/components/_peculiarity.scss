@@ -1,0 +1,128 @@
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.peculiarity-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+.list__item {
+    flex-basis: 100%;
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 90px) / 2);
+        margin-right: 30px;
+        }
+    
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 90px) / 4);
+    }
+}
+@media screen and (min-width: 768px) and (max-width:1199px) {
+    .list__item:nth-child(2n) {
+        margin-right: 0;
+    }
+    .list__item:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .list__item:nth-child(4n) {
+        margin-right: 0;
+    }
+
+    .list__item:nth-last-child(-n + 4) {
+        margin-bottom: 0;
+    }
+}
+.list__item:not(:last-child){
+    margin-bottom: 30px;
+}
+.peculiarity {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--peculiarity-color, #212121);
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
+    letter-spacing: 0.03em;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--text-color);
+    letter-spacing: 0.03em;
+}
+
+.list__item-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.antena::before {
+    content: '';
+    display: block;
+    height: 120px;
+    background-image: url(../images/icon/antenna.svg);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f5f4fa;
+    margin-bottom: 30px;
+    
+}
+
+.clock::before {
+    content: '';
+    display: block;
+    height: 120px;
+    background-image: url(../images/icon/clock.svg);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f5f4fa;
+    margin-bottom: 30px;
+}
+
+.diagram::before {
+    content: '';
+    display: block;
+    height: 120px;
+    background-image: url(../images/icon/diagram.svg);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f5f4fa;
+    margin-bottom: 30px;
+}
+
+.astronaut::before {
+    content: '';
+    display: block;
+    height: 120px;
+    background-image: url(../images/icon/astronaut.svg);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f5f4fa;
+    margin-bottom: 30px;
+}

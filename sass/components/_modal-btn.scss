@@ -1,0 +1,59 @@
+.modal-close-btn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+    background-color: var(--list-color);
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    padding: 0;
+    transition: color 250ms var(--time-transition);
+}
+
+.modal-submit-btn {
+    margin-top: 30px;
+    margin-left: 124px;
+    margin-right: 124px;
+    margin-bottom: 40px;
+}
+
+.modal-submit-btn,
+.footer-submit-btn {
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: var(--list-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    background-color: var(--logo-color);
+    border-radius: 4px;
+    transition: box-shadow 250ms var(--time-transition);
+}
+
+.modal-submit-btn:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.modal-submit-btn:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.close-icon {
+    fill: currentColor;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-close-btn:focus,
+.modal-close-btn:hover {
+    color: var(--logo-color);
+    outline: transparent;
+}

@@ -1,0 +1,51 @@
+/*чем мы занимаемся*/
+.visualization-section {
+    padding-bottom: 94px;
+}
+
+.main-title {
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    color: var(--peculiarity-color, #212121);
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.visualization {
+    display: flex;
+    padding-left: 0;
+}
+
+.visualization__item {
+    position: relative;
+    width: 370px;
+    height: 294px;
+}
+
+.visualization__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.visualization-item-element {
+    position: absolute;
+    top: 100%;
+    transform: translateY(-100%);
+    width: 370px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.visualization-item-element__text {
+    color: var(--list-color);
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
