@@ -27,6 +27,15 @@ button {
     white-space: nowrap;
     border-radius: 4px;
     transition: box-shadow 250ms var(--time-transition);
+
+    &:hover,
+    &:focus {
+        background-color: rgb(231, 111, 96);
+    }
+
+    @media screen and (min-width: 320px) {
+        padding: 10px;
+    }
 }
 .stydio-button:hover,
 .stydio-button:focus {
@@ -46,6 +55,33 @@ button {
     transition: color 250ms var(--time-transition),
         background-color 250ms var(--time-transition),
         box-shadow 250ms var(--time-transition);
+
+         &:hover {
+             box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+             background: rgb(24, 97, 79);
+             transform: translateY(2px);
+         }
+
+         &:focus {
+             box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+             background: rgb(24, 97, 79);
+             transform: translateY(2px);
+         }
+
+         &:focus {
+             border-radius: 4px;
+             color: var(--main-background);
+         }
+
+         &:active {
+             border-radius: 4px;
+             color: var(--main-background);
+         }
+
+         &:hover {
+             border-radius: 4px;
+             color: var(--main-background);
+         }
 }
 .portfolio-button {
     display: flex;

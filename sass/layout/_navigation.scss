@@ -19,6 +19,10 @@
     height: 4px;
     background-color: var(--logo-color);
     border-radius: 2px;
+
+    @media screen and(max-width:767px) {
+        display: none;
+    }
 }
 
 .site-nav {
@@ -64,6 +68,29 @@
     align-items: center;
     color: var(--text-color);
     transition: color 250ms var(--time-transition);
+
+    &:hover,
+    &:focus {
+        animation-name: changeColor, changeTextTransform;
+        animation-duration: 3000ms;
+    }
+
+    @keyframes changeColor {
+        0% {
+            color: #da1212fa;
+        }
+    }
+
+    @keyframes changeTextTransform {
+        0% {
+            text-transform: uppercase;
+        }
+    }
+
+    &:hover,
+    &:focus {
+        color: var(--logo-color);
+    }
 }
 
 .site-nav__link:hover,

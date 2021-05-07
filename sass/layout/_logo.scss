@@ -11,6 +11,22 @@
     line-height: 1.19;
     font-family: Raleway;
     color: var(--logo-color);
+
+    @media screen and(max-width: 320px) and(min-width: 480px) {
+        font-size: 24px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    @media screen and(min-width: 767px) {
+        margin-right: 88px;
+    }
+
+    @media screen and(min-width:1200px) {
+        margin-right: 93px;
+    }
 }
 
 .logo-basement {
