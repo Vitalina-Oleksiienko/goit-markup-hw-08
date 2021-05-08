@@ -48,7 +48,12 @@ address {
 .card-footer {
     flex-basis: calc((50% - 45px) / 2);
     display: block;
-
+    @media screen and(min-width:768px) {
+        flex-basis: calc((50% - 45px) / 1);
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
 
 }
 
