@@ -1295,6 +1295,12 @@ p {
   }
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .user-block__item {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .user-block__item:nth-child(2n) {
     margin-right: 0;
