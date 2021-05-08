@@ -90,12 +90,6 @@
         animation-duration: 3000ms;
     }
 
-    @keyframes changeColor {
-        0% {
-            color: #da1212fa;
-        }
-    }
-
     @keyframes changeTextTransform {
         0% {
             text-transform: uppercase;
