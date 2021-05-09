@@ -1,40 +1,30 @@
 .mobile-btn{
+    position: relative;
     height: 40px;
     width: 40px;
     background-color:transparent;
     border: none;
     display: flex;
-    z-index: 1;
-    padding: 10px 10px;
-   
+    z-index: 102;
+    overflow: auto;
+    padding: 10px;
+    margin-top: 22px;
+
+   .icon-close{
+       display: none;
+   }
     @media screen and(min-width: 768px) {
         display: none;
     }
-    
+     &.is-open .icon-close {
+         display: block;
+         position: fixed;
+         fill: var(--logo-color);
+     }
+     &.is-open .icon-menu {
+         display: none;
+     }
 }
-.menu-btn .is-open .icon-close {
-    display: block;
-    position: absolute;
-}
-.menu-btn .is-open .icon-menu {
-    display: none;
-}
-
-.mobile-menu-icon .icon-close {
-    height: 18px;
-    width: 18px;
-    fill: var(--peculiarity-color);
-}
-
-.mobile-menu-icon .icon-menu {
-    height: 18px;
-    width: 18px;
-}
-
-.mobile-menu-icon .icon-close {
-    display: none;
-}
-
 .menu {
     display: none;
     position: absolute;
@@ -43,7 +33,7 @@
     height: 100vh;
     width: 100vw;
     padding: 48px 40px;
-
+  
     &.is-open {
         display: block;
         position: fixed;
@@ -53,34 +43,34 @@
         background-color: #fff;
 
         @media screen and(min-width: 767px) {
+            body{
+            max-height: 100vh;
             display: none;
+            overflow: hidden;
+            }
         }
     }
-
     @media screen and(max-width: 766px) {
         .menu {
             display: block;
             display: flex;
+            overflow: auto;
             top: 0;
             left: 0;
             height: 0;
             padding: 0;
         }
     }
-
     .social__wrap {
         @media screen and(min-width: 768px) {
             display: none;
         }
     }
-
     .menu-list {
         margin-top: 0;
         margin-bottom: 0;
     }
-
     .social__list {
-        
         margin: 0;
         flex-direction: row;
         align-items: center;
@@ -133,6 +123,7 @@
     font-size: 40px;
     line-height: 1.17;
     letter-spacing: 0.02em;
+
     color: var(----peculiarity-color);
 }
 .menu__link--active{
@@ -143,11 +134,11 @@
 }
 
 .mobile-contact {
-     display: flex;
-     flex-wrap: wrap;
-     padding-left: 0;
-     justify-content: center;
-     flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    justify-content: center;
+    flex-direction: column;
     margin-bottom: 64px;
 }
 .mobile-contact__item{
