@@ -1569,6 +1569,13 @@ h3 {
   display: inline-flex;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .footer-form {
+    display: block;
+    text-align: center;
+  }
+}
+
 .footer-input {
   height: 50px;
   width: 350px;
