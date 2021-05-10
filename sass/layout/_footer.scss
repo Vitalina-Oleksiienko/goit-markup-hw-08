@@ -224,7 +224,35 @@ address {
         text-align: left;
     }
 }
+.site-nav .footer-address {
+    color: var(--list-color);
+    white-space: nowrap;
+}
 
+.footer-contact__item {
+    padding-left: 0;
+    margin-bottom: 9px;
+}
+
+.site-nav-footer__link {
+    margin-bottom: 9px;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--text-color);
+    letter-spacing: 0.03em;
+    transition: color 250ms var(--time-transition);
+}
+
+.footer-address {
+    color: var(--list-color);
+}
+
+.site-nav-footer__link:hover,
+.site-nav-footer__link:focus {
+    color: var(--logo-color);
+}
 .card-footer {
     display: block;
 
@@ -244,6 +272,10 @@ address {
     }
 }
 
+.site-nav-footer__link:hover,
+.site-nav-footer__link:focus {
+    color: var(--logo-color);
+}
 .soсial {
     height: 80px;
     display: flex;
