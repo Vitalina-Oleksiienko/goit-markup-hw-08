@@ -32,35 +32,13 @@
 }
 
 .company-link {
-    width: 170px;
+   width: 170px;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
 
     transition: border 250ms var(--time-transition);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
-    flex-basis: calc((100% - 180px) / 6);
-    transition: border 250ms var(--time-transition);
-     @media screen and (min-width: 320px),
-     (max-width:767) {
-         flex-basis: calc((100% - 60px) / 2);
-         width: 210px;
-         border: 1px solid #afb1b8;
-         border-radius: 4px;
-
-     }
-
-     @media screen and (min-width: 768px) {
-         flex-basis: calc((100% - 90px) / 3);
-     }
-
-     @media screen and (min-width: 1200px) {
-         flex-basis: calc((100% - 180px) / 6);
-     }
+   
 }
 
 .company-link:hover,
@@ -74,9 +52,10 @@
 }
 
 .company-link__icon {
+    
     fill: #afb1b8;
     transition: fill 250ms var(--time-transition);
-    align-items: center;
+    
 }
 @media screen and(max-width:768px) {
     .main-title {
