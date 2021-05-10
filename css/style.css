@@ -348,12 +348,6 @@ h3 {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .site-nav__contact {
-    height: 60px;
-  }
-}
-
 .site-nav__item:not(:last-child) {
   margin-right: 50px;
   position: relative;
@@ -483,7 +477,20 @@ h3 {
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.02em;
-    padding-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  a.mail {
+    padding-top: 21px;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  a.phone {
+    padding-top: 0;
+    padding-bottom: 21px;
   }
 }
 
@@ -976,6 +983,28 @@ button {
   margin-right: auto;
   margin-bottom: 50px;
   padding-left: 0;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .portfolio-button {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-button {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .portfolio-button__element {
+    margin-bottom: 15px;
+  }
 }
 
 .portfolio-button__all {
@@ -1507,6 +1536,7 @@ h3 {
 }
 
 .subscription {
+  display: block;
   width: 100%;
   flex-basis: calc(50% - 15px);
   /*@media screen and (min-width: 320px),

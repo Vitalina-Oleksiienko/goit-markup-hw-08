@@ -45,9 +45,7 @@
         height: 80px;
 
     }
-    
 }
-
 .site-nav__contact {
     justify-content: flex-end;
     margin-left: auto;
@@ -55,10 +53,7 @@
     @media screen and(max-width:767px) {
         display: none;
     }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        height: 60px;
-
-    }
+    
 }
 
 .site-nav__item:not(:last-child) {
@@ -175,8 +170,19 @@
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.02em;
-    padding-bottom: 10px;
 
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    a.mail{
+        padding-top: 21px;
+        padding-bottom: 0;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    a.phone {
+        padding-top: 0;
+        padding-bottom: 21px;
     }
 }
 .contact-header__link:hover .envelope,
