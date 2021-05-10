@@ -536,6 +536,12 @@ h3 {
   margin-top: 22px;
 }
 
+.mobile-btn.is-open {
+  position: fixed;
+  top: 8px;
+  right: 8px;
+}
+
 .mobile-btn .icon-close {
   display: none;
 }
@@ -549,6 +555,8 @@ h3 {
 .mobile-btn.is-open .icon-close {
   display: block;
   position: fixed;
+  top: 8px;
+  right: 8px;
   fill: var(--logo-color);
 }
 
@@ -567,7 +575,6 @@ h3 {
 }
 
 .menu.is-open {
-  display: block;
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -1683,7 +1690,15 @@ h3 {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
+  transition-property: opacity;
   transition: opacity 250ms var(--time-transition);
+}
+
+@media screen and (max-width: 768px) {
+  .backdrop {
+    padding: 94px 15px;
+    overflow-y: scroll;
+  }
 }
 
 .is-hidden {
@@ -1696,7 +1711,7 @@ h3 {
 }
 
 .modal {
-  position: fixed;
+  position: relative;
   width: 528px;
   height: 581px;
   top: 50%;
@@ -1707,6 +1722,40 @@ h3 {
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--time-transition);
+}
+
+@media screen and (min-width: 320px) {
+  .modal {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 528px;
+    min-height: 581px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .modal-form {
+    padding: 20px;
+    padding-top: 40px;
+  }
 }
 
 .close-icon {
@@ -1809,14 +1858,14 @@ textarea.modal-input {
 @media screen and (min-width: 320px) {
   .modal-checkbox-text {
     flex-wrap: wrap;
-    font-size: 10px;
+    font-size: 8px;
   }
 }
 
 @media screen and (min-width: 420px) {
   .modal-checkbox-text {
     margin-left: 0;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 1.16;
   }
 }
@@ -1842,21 +1891,22 @@ textarea.modal-input {
   text-decoration-line: underline;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 377px) {
   .modal-checkbox-link {
-    margin-top: 15px;
+    font-size: 8px;
   }
 }
 
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 378px) and (max-width: 479px) {
   .modal-checkbox-link {
-    margin-top: 0;
+    font-size: 10px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal-checkbox-link {
-    margin-left: 3px;
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
 
@@ -1867,6 +1917,20 @@ textarea.modal-input {
   border-radius: 2px;
   border: 2px solid #000;
   transition: background-color 250ms var(--time-transition), fill 250ms var(--time-transition), border 250ms var(--time-transition);
+}
+
+@media screen and (max-width: 377px) {
+  .modal-icon-checkbox {
+    width: 12px;
+    height: 11px;
+  }
+}
+
+@media screen and (min-width: 378px) and (max-width: 479px) {
+  .modal-icon-checkbox {
+    width: 13px;
+    height: 12px;
+  }
 }
 
 .modal-checkbox:focus + .modal-icon-checkbox {

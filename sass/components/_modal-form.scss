@@ -6,7 +6,13 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
+    transition-property: opacity;
     transition: opacity 250ms var(--time-transition);
+
+     @media screen and (max-width: 768px) {
+         padding: 94px 15px;
+         overflow-y: scroll;
+     }
 }
 
 .is-hidden {
@@ -19,7 +25,7 @@
 }
 
 .modal {
-    position: fixed;
+    position: relative;
     width: 528px;
     height: 581px;
     top: 50%;
@@ -31,8 +37,35 @@
     border-radius: 4px;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms var(--time-transition);
-}
 
+    @media screen and (min-width: 320px){
+        width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        min-width: 528px;
+        min-height: 581px;
+    }
+}
+@media screen and (max-width: 479px) {
+    .modal-form{
+    padding: 20px;
+    padding-top: 40px;
+    }
+}
 .close-icon {
     position: absolute;
     top: 50%;
@@ -132,12 +165,12 @@ textarea.modal-input {
 
     @media screen and(min-width: 320px) {
         flex-wrap: wrap;
-        font-size: 10px;
+        font-size: 8px;
     }
 
     @media screen and(min-width: 420px) {
         margin-left: 0;
-        font-size: 12px;
+        font-size: 10px;
         line-height: 1.16;
     }
 
@@ -160,16 +193,17 @@ textarea.modal-input {
     letter-spacing: 0.03em;
     text-decoration-line: underline;
 
-    @media screen and(min-width: 320px) {
-        margin-top: 15px;
+    @media screen and (max-width: 377px) {
+        font-size: 8px;
     }
 
-    @media screen and(min-width: 420px) {
-        margin-top: 0;
+    @media screen and (min-width: 378px) and (max-width: 479px) {
+        font-size: 10px;
     }
 
-    @media screen and(min-width:1200px) {
-        margin-left: 3px;
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
     }
 }
 
@@ -182,6 +216,16 @@ textarea.modal-input {
     transition: background-color 250ms var(--time-transition),
         fill 250ms var(--time-transition),
         border 250ms var(--time-transition);
+
+        @media screen and (max-width: 377px) {
+            width: 12px;
+            height: 11px;
+        }
+
+        @media screen and (min-width: 378px) and (max-width: 479px) {
+            width: 13px;
+            height: 12px;
+        }
 }
 
 .modal-checkbox:focus+.modal-icon-checkbox {
