@@ -1506,6 +1506,9 @@ h3 {
 }
 
 .company-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -1536,17 +1539,9 @@ h3 {
 }
 
 .subscription {
-  display: block;
-  width: 100%;
+  width: 570px;
   flex-basis: calc(50% - 15px);
-  /*@media screen and (min-width: 320px),
-     (max-width: 767px) {
-         display: block;
-         text-align: center;
-         max-width: 450px;
-     }
-
-     @media screen and(min-width:768px) {
+  /*@media screen and(min-width:768px) {
          margin-top: 60px;
          margin-left: auto;
          margin-right: auto;
@@ -1558,6 +1553,12 @@ h3 {
          margin: 0;
          text-align: left;
      }*/
+}
+
+@media screen and (min-width: 320px), (max-width: 767px) {
+  .subscription {
+    width: 100%;
+  }
 }
 
 .footer-input {
