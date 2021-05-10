@@ -751,6 +751,12 @@ address {
   text-align: start;
 }
 
+@media screen and (min-width: 768px), (max-width: 1199px) {
+  .footer-address {
+    text-align: center;
+  }
+}
+
 .footer-contact__item {
   padding-left: 0;
   margin-bottom: 9px;
@@ -765,10 +771,6 @@ address {
   color: var(--text-color);
   letter-spacing: 0.03em;
   transition: color 250ms var(--time-transition);
-}
-
-.footer-address {
-  color: var(--list-color);
 }
 
 .site-nav-footer__link:hover,
@@ -843,16 +845,6 @@ address {
   .footer__social {
     text-align: center;
   }
-}
-
-.footer-list {
-  text-transform: uppercase;
-  color: var(--list-color);
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  margin-bottom: 20px;
 }
 
 .social-footer__icon {
@@ -1566,6 +1558,17 @@ h3 {
   }
 }
 
+.footer-list {
+  text-transform: uppercase;
+  color: var(--list-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  text-align: start;
+}
+
 .footer-form {
   display: inline-flex;
 }
@@ -1573,6 +1576,12 @@ h3 {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .footer-form {
     display: block;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px), (max-width: 1199px) {
+  .footer-form {
     text-align: center;
   }
 }

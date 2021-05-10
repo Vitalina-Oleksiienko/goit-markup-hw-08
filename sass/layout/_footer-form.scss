@@ -10,12 +10,32 @@
         text-align: center;
     }
 }
+.footer-list {
+    text-transform: uppercase;
+    color: var(--list-color);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+    text-align: start;
+
+    @media screen and (min-width: 768px),
+    (max-width: 1199px) {
+        
+    }
+}
+
 .footer-form{
    display: inline-flex;
    @media screen and(min-width: 320px) and (max-width: 767px){
        display: block;
-       text-align: center;
+       text-align: center; 
+   }
+   @media screen and (min-width: 768px),
+   (max-width: 1199px){
        
+       text-align: center;
    }
     
 }
