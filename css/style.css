@@ -1102,7 +1102,7 @@ h1 {
 
 @media screen and (min-width: 320px) and (min-device-pixel-ratio: 2), screen and (min-width: 320px) and (min-resolution: 192dpi), screen and (min-width: 320px) and (min-resolution: 2dppx) {
   .main {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Header1х.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header1х.jpg);
   }
 }
 
@@ -1117,7 +1117,7 @@ h1 {
 
 @media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), (max-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx), (max-width: 767px) and (min-resolution: 2dppx) {
   .main {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Header1х.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header1х.jpg);
   }
 }
 
@@ -1129,7 +1129,7 @@ h1 {
 
 @media screen and (min-width: 768px) and (max-width: 968px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 968px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 968px) and (min-resolution: 2dppx) {
   .main {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Header2х.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header2х.jpg);
   }
 }
 
@@ -1140,13 +1140,13 @@ h1 {
     margin-right: auto;
     margin-left: auto;
     height: 600px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/фон.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/фон.jpg);
   }
 }
 
 @media screen and (min-width: 970px) and (min-device-pixel-ratio: 2), screen and (min-width: 970px) and (min-resolution: 192dpi), screen and (min-width: 970px) and (min-resolution: 2dppx) {
   .main {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/фон.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/фон.jpg);
   }
 }
 
