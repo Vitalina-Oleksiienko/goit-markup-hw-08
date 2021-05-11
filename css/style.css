@@ -166,6 +166,12 @@ header {
   border-bottom: 1px solid #ECECEC;
 }
 
+@media screen and (min-width: 768px) {
+  header {
+    height: 60px;
+  }
+}
+
 img {
   display: block;
   width: 100%;
@@ -515,6 +521,7 @@ h3 {
   overflow: auto;
   padding: 10px;
   margin-top: 22px;
+  margin-right: 0;
 }
 
 .mobile-btn.is-open {
@@ -543,6 +550,10 @@ h3 {
 
 .mobile-btn.is-open .icon-menu {
   display: none;
+}
+
+button.mobile-btn.icon-menu {
+  margin-right: 0;
 }
 
 .menu {
