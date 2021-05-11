@@ -20,7 +20,7 @@
         color 250ms var(--time-transition),
         background-color 250ms var(--time-transition);
 
-     @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
          flex-basis:calc((100% - 4 * 15px) / 2);
     }
     @media screen and (min-width: 1200px) {
@@ -40,8 +40,8 @@
 
 .gallery-item__link {
     display: block;
+    
 }
-
 .gallery-item-text:hover .gallery-overlay,
 .gallery-item__link:focus .gallery-overlay {
     transform: translateY(0);
@@ -70,11 +70,11 @@
     position: relative;
     overflow: hidden;
 
-    @media screen and(max-width: 375px) {
+    /*@media screen and(max-width: 375px) {
         font-size: 14px;
         padding-top: 30px;
     }
-}
+}*/
 
 .portfolio-card {
     border: 1px solid #eeeeee;
