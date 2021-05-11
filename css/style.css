@@ -1085,7 +1085,7 @@ h1 {
   padding: 200px 0;
   text-align: center;
   max-width: 1600px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/фон.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/фон.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1776,13 +1776,10 @@ h3 {
   overflow: hidden;
 }
 
-@media screen and (max-width: 375px) {
-  .gallery-item-text {
-    font-size: 14px;
-    padding-top: 30px;
-  }
-}
-
+/*@media screen and(max-width: 375px) {
+        font-size: 14px;
+        padding-top: 30px;
+    }*/
 .portfolio-card {
   border: 1px solid #eeeeee;
   border-radius: 5px;
