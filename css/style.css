@@ -753,7 +753,7 @@ address {
 
 @media screen and (min-width: 768px), (max-width: 1199px) {
   .footer-address {
-    text-align: center;
+    color: var(--list-color);
   }
 }
 
