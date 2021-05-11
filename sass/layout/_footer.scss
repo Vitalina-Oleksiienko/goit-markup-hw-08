@@ -21,9 +21,8 @@ address {
     align-items: baseline;
     justify-content: space-between;
 
-    @media screen and(min-width: 320px) and (max-width: 767) {
-        text-align: center;
-        justify-content: center;
+    @media screen and (max-width: 480px) {
+        display: block;
         margin-bottom: 30px;
     }
 
@@ -57,9 +56,16 @@ address {
     letter-spacing: 0.03em;
     transition: color 250ms var(--time-transition);
 
+    @media screen and (max-width: 480px){
+        text-align: center;
+    }
+
      @media screen and (min-width: 768px),
      (max-width: 1199px) {
         
+     }
+     @media screen and(min-width:768px) and (max-width: 1199px){
+         text-align: center;
      }
 }
 .footer-contact__item {
@@ -85,17 +91,22 @@ address {
 .card-footer {
     display: block;
 
+    @media screen and (max-width: 480px) {
+        text-align: center;
+    }
+
     @media screen and(min-width: 320px) and (max-width: 767) {
-        width: 100%;
+        width: 50%;
         align-items: center;
         text-align: center;
         
     }
 
     @media screen and(min-width:768px) and (max-width: 1199px) {
-        width: calc((100% - 45px) / 2);
+        width: calc((65% - 45px) / 2);
         flex-direction: column;
         justify-content: left;
+        text-align: center;
     }
 
     @media screen and(min-width:1200px) {
@@ -111,15 +122,7 @@ address {
     height: 80px;
     display: flex;
 
-    @media screen and(min-width: 320px) and (max-width: 767) {
-        
-        flex-direction: column;
-        align-items: center;
-        
-        margin-bottom: 60px;
-        margin-right: 0;
-        width: 100%;
-    }
+    
 
     @media screen and(min-width:768px) and (max-width: 1199px) {
         justify-content: center;
@@ -127,6 +130,12 @@ address {
         margin-right: auto;
         justify-content: left;
         width: calc((100% - 45px) / 2);
+        flex-direction: column;
+        align-items: center;
+
+        margin-bottom: 60px;
+        margin-right: 0;
+        width: 50%;
     }
 
     @media screen and(min-width:1200px) {
@@ -136,7 +145,16 @@ address {
 }
 .footer__social{
     
-    @media screen and(min-width: 320px){
+    /*@media screen and(min-width: 320px){
+        text-align: center;
+        
+    }*/
+    @media screen and(min-width: 320px) and (max-width: 767) {
+        justify-content: center;
+        width: calc((100% - 45px) / 2);
+        flex-basis: 100%;
+    }
+    @media screen and(min-width: 320px) and (max-width: 767px) {
         text-align: center;
         
     }
